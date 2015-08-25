@@ -2,6 +2,9 @@
 #
 #
 
+# Set up environment variables
+export PATH=$PATH:~/.composer/vendor/bin
+
 # Set up command aliases
 # ----------------------
 
