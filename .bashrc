@@ -19,3 +19,6 @@ alias md='mkdir'          # md === mkdir
 # Aliases: Helpers
 alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
 alias grep='grep --color=auto'
+
+# Aliases: Development
+alias sf='php app/console'
