@@ -23,6 +23,8 @@ brew install mysql
 brew tap homebrew/php
 brew install php56
 brew install php56-apcu
+brew install php56-intl
+brew install php56-mcrypt
 
 # Install Composer and PHPUnit.
 brew install composer
