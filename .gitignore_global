@@ -1,0 +1,7 @@
+# Global .gitignore
+# -----------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+.idea/
+
