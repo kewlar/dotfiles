@@ -36,5 +36,9 @@ export PATH=$PATH:~/.composer/vendor/bin
 curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
 chmod a+x /usr/local/bin/symfony
 
+# Configure Git
+git config --global core.excludesfile ~/.gitignore_global
+git config --global push.default simple
+
 # Finish up.
 mysql.server start
