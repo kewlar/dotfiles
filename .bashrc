@@ -23,3 +23,4 @@ alias grep='grep --color=auto'
 # Aliases: Development
 alias sf='php app/console'
 alias dev='cd ~/dev'
+alias hosts='sudo vi /etc/hosts'
