@@ -29,6 +29,7 @@ brew install php56-apcu
 brew install php56-intl
 brew install php56-mcrypt
 brew install php56-dblib
+brew install rabbitmq
 brew install bash-completion
 
 # Configure PHP
