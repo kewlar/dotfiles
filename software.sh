@@ -28,7 +28,13 @@ brew install php56
 brew install php56-apcu
 brew install php56-intl
 brew install php56-mcrypt
+brew install php56-dblib
 brew install bash-completion
+
+# Configure PHP
+sed -i.bak 's/^[; ]*date.timezone[ ]*=.*/date.timezone = Europe\/Vilnius/' $(brew --prefix)/etc/php/5.6/php.ini
+sed -i.bak 's/^[; ]*always_populate_raw_post_data[ ]*=.*/always_populate_raw_post_data = -1/' $(brew --prefix)/etc/php/5.6/php.ini
+rm $(brew --prefix)/etc/php/5.6/php.ini.bak
 
 # Install Composer and PHPUnit.
 brew install composer
