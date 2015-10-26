@@ -25,6 +25,7 @@ brew install php56
 brew install php56-apcu
 brew install php56-intl
 brew install php56-mcrypt
+brew install bash-completion
 
 # Install Composer and PHPUnit.
 brew install composer

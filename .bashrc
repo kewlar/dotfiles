@@ -28,3 +28,8 @@ alias sf='php app/console'
 alias dev='cd ~/dev'
 alias hosts='sudo vi /etc/hosts'
 alias flushdns='sudo killall -HUP mDNSResponder'
+
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
