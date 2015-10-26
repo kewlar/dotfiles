@@ -20,6 +20,9 @@ brew install node
 npm -g install bower
 npm -g install less
 brew install mysql
+brew tap homebrew/apache
+brew install httpd24 --with-mpm-event --with-privileged-ports
+# @todo Configure Apache2. See https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew
 brew tap homebrew/php
 brew install php56
 brew install php56-apcu
