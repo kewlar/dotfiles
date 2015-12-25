@@ -4,4 +4,4 @@
 .DS_Store?
 Thumbs.db
 .idea/
-
+.sass-cache/
