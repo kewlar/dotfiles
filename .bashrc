@@ -3,10 +3,13 @@
 #
 
 # Set up environment variables
-export PATH="~/.composer/vendor/bin:/usr/local/sbin:$PATH"
+# ----------------------------
+
 export PS1="\[\e[0;32m\]\u@\h \[\e[1;34m\]\w\[\e[0m\]\n\$ "
 # Harcoded prompt symbol, because \$ somehow does not switch to # under root.
 export SUDO_PS1="\[\e[0;31m\]\u@\h \[\e[1;34m\]\w\[\e[0m\]\n# "
+
+source ~/.dotfiles/common_env.sh
 
 # Set up command aliases
 # ----------------------
@@ -25,14 +28,11 @@ alias grep='grep --color=auto'
 
 # Aliases: Development
 alias sf='php app/console'
+alias sfcl='sf cache:clear'
+alias sfsr='sf server:run -vvv'
 alias dev='cd ~/dev'
-alias hosts='sudo vi /etc/hosts'
-alias flushdns='sudo killall -HUP mDNSResponder'
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
