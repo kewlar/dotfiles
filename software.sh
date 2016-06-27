@@ -17,30 +17,45 @@ fi;
 # Install the software.
 brew install git
 brew install node
+brew install dnsmasq
 npm -g install bower
 npm -g install less
-brew install mysql
+brew install mariadb
 brew tap homebrew/apache
 brew install httpd24 --with-mpm-event --with-privileged-ports
 # @todo Configure Apache2. See https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew
 brew tap homebrew/php
-brew install php56
-brew install php56-apcu
-brew install php56-intl
-brew install php56-mcrypt
-brew install php56-dblib
+brew install php70
+brew install php70-apcu-bc
+brew install php70-imagick
+brew install php70-intl
+brew install php70-mongodb
+brew install php70-opcache
+brew install php70-pdo-dblib
+brew install php70-xdebug
+brew install blackfireio/blackfire/blackfire-agent
+brew install blackfireio/blackfire/blackfire-php70
 brew install rabbitmq
 brew install bash-completion
+brew install awscli
+brew install cheat
+brew install pngcrush
+brew install optipng
+brew install rbenv
 
 # Configure PHP
-sed -i.bak 's/^[; ]*date.timezone[ ]*=.*/date.timezone = Europe\/Vilnius/' $(brew --prefix)/etc/php/5.6/php.ini
-sed -i.bak 's/^[; ]*always_populate_raw_post_data[ ]*=.*/always_populate_raw_post_data = -1/' $(brew --prefix)/etc/php/5.6/php.ini
-rm $(brew --prefix)/etc/php/5.6/php.ini.bak
+sed -i.bak 's/^[; ]*date.timezone[ ]*=.*/date.timezone = Europe\/Vilnius/' $(brew --prefix)/etc/php/7.0/php.ini
+rm $(brew --prefix)/etc/php/7.0/php.ini.bak
 
 # Install Composer and PHPUnit.
 brew install composer
 composer selfupdate
-composer global require phpunit
+composer global require phpunit/phpunit
+composer global require ongr/ongr-strict-standard
+composer global require behat/behat
+composer global require pyrech/composer-changelogs
+composer global require phpmd/phpmd
+composer global require codeception/codeception
 export PATH=$PATH:~/.composer/vendor/bin
 
 # Install Symfony Installer.
