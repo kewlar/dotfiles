@@ -58,6 +58,8 @@ composer global require behat/behat
 composer global require pyrech/composer-changelogs
 composer global require phpmd/phpmd
 composer global require codeception/codeception
+composer global require friendsofphp/php-cs-fixer
+composer global require ramsey/uuid-console
 export PATH=$PATH:~/.composer/vendor/bin
 
 # Install Symfony Installer.
