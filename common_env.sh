@@ -14,3 +14,7 @@ alias flushdns='sudo killall -HUP mDNSResponder'
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+if [ -f ~/.dotfiles/secrets.sh ]; then
+  source ~/.dotfiles/secrets.sh
+fi
