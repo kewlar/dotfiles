@@ -6,6 +6,7 @@
 export PATH=~/.composer/vendor/bin:~/bin:/usr/local/sbin:$PATH
 
 # Aliases
+alias diff='colordiff -u'
 alias sfp='sf --env=prod'
 alias sfpcl='sf cache:clear --env=prod'
 alias sfclc='rm -rf var/cache/test;rm -rf var/cache/prod;rm -rf var/cache/dev'

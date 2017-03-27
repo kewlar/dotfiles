@@ -44,6 +44,7 @@ brew install optipng
 brew install rbenv
 brew install unrar
 brew install jq
+brew install colordiff
 
 # Configure PHP
 sed -i.bak 's/^[; ]*date.timezone[ ]*=.*/date.timezone = Europe\/Vilnius/' $(brew --prefix)/etc/php/7.0/php.ini
