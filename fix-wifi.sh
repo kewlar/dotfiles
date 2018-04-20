@@ -15,7 +15,9 @@ dirname=$prefix$timestamp
 mkdir -pv $dirname
 mv \
 	/Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist \
-	/Library/Preferences/SystemConfiguration/NetworkInterfaces.plist \
+	/Library/Preferences/SystemConfiguration/com.apple.network.eapolclient.configuration.plist \
+        /Library/Preferences/SystemConfiguration/com.apple.wifi.message-tracer.plist \
+        /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist \
 	/Library/Preferences/SystemConfiguration/preferences.plist \
 	$dirname
 
