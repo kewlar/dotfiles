@@ -12,6 +12,9 @@ alias sfpcl='sf cache:clear --env=prod'
 alias sfclc='rm -rf var/cache/test;rm -rf var/cache/prod;rm -rf var/cache/dev'
 alias hosts='sudo vi /etc/hosts'
 alias flushdns='sudo killall -HUP mDNSResponder'
+alias cdp='cd ~/dev/ksd/pim/'
+alias cda='cd ~/dev/ksd/aikido/'
+alias mcd='mkdir -p "$1" && cd "$1"'
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
