@@ -3,7 +3,8 @@
 #
 
 # Environment variables.
-export PATH=~/.composer/vendor/bin:~/bin:/usr/local/sbin:$PATH
+# export PATH="~/.composer/vendor/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:~/.rbenv/versions/`cat ~/.rbenv/version`/bin:$PATH"
+export PATH="~/.composer/vendor/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Aliases
 alias diff='colordiff -u'
