@@ -15,6 +15,11 @@ alias hosts='sudo vi /etc/hosts'
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias cdp='cd ~/dev/ksd/pim/'
 alias cda='cd ~/dev/ksd/aikido/'
+alias cde='cd ~/dev/ksd/elfas/'
+alias cdb='cd ~/dev/ksd/buscador/'
+alias cdq='cd ~/dev/ksd/buscador-query/'
+alias cdd='cd ~/dev/ksd/docker/'
+alias cdx='cd ~/Exercism/'
 alias mcd='mkdir -p "$1" && cd "$1"'
 
 # rbenv
