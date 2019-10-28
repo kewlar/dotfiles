@@ -23,7 +23,10 @@ alias cdb='cd ~/dev/ksd/buscador/'
 alias cdq='cd ~/dev/ksd/buscador-query/'
 alias cdd='cd ~/dev/ksd/docker/'
 alias cdx='cd ~/Exercism/'
-alias mcd='mkdir -p "$1" && cd "$1"'
+mcd() {
+  mkdir -p "$1"
+  cd "$1"
+}
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
