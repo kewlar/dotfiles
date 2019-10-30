@@ -3,8 +3,8 @@
 #
 
 # Environment variables.
-export PATH="~/.composer/vendor/bin:~/bin:`brew --prefix qt@5.5`/bin:~/Library/Python/3.7/bin:$PATH"
-export PATH="~/.yarn/bin:~/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/bin:`brew --prefix qt@5.5`/bin:$HOME/Library/Python/3.7/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export LANG="en_US.UTF-8"
 
