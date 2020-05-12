@@ -7,4 +7,6 @@ Thumbs.db
 .idea/
 .sass-cache/
 .byebug_history
+.generators
+.rakeTasks
 
