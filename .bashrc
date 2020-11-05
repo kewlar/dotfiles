@@ -27,9 +27,6 @@ alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory 
 alias grep='grep --color=auto'
 
 # Aliases: Development
-alias sf='php app/console'
-alias sfcl='sf cache:clear'
-alias sfsr='sf server:run -vvv'
 alias dev='cd ~/dev'
 
 # Bash completion
