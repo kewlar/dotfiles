@@ -3,7 +3,8 @@
 #
 
 # Environment variables.
-export PATH="$HOME/bin:`brew --prefix qt@5.5`/bin:$HOME/Library/Python/3.7/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/opt/libxml2/bin:$PATH"
+export LIBRARY_PATH="${LD_LIBRARY_PATH:+LD_LIBRARY_PATH:}/usr/local/opt/openssl/lib/"
+export PATH="$HOME/bin:/usr/local/opt/libxml2/bin:$PATH"
 export LANG="en_US.UTF-8"
 
 # Aliases
