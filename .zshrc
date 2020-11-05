@@ -98,5 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.dotfiles/common_env.sh
+setopt share_history
 
+source ~/.dotfiles/common_env.sh
