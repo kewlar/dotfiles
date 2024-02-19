@@ -4,7 +4,7 @@
 # Reference: http://apple.stackexchange.com/questions/195359/wifi-keeps-dropping-macbook-pro-13in-retina-early-2015
 
 echo "Disable WiFi, and press Enter to continue or Ctrl+C to cancel."
-read foo
+read # Wait for the Enter
 
 prefix="${HOME}/wifi_backup/"
 timestamp=`date "+%Y-%m-%d_%H%M%S"`
