@@ -103,6 +103,3 @@ source $ZSH/oh-my-zsh.sh
 setopt share_history
 
 source ~/.dotfiles/common_env.sh
-
-# Created by `pipx` on 2024-02-15 22:06:35
-export PATH="$PATH:/home/kewlar/.local/bin"
