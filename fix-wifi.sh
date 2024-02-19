@@ -1,6 +1,4 @@
-#!/bin/bash
-#
-#
+#!/bin/zsh
 
 # Fixing OS X WiFi issues.
 # Reference: http://apple.stackexchange.com/questions/195359/wifi-keeps-dropping-macbook-pro-13in-retina-early-2015
