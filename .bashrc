@@ -1,7 +1,3 @@
-#!/bin/bash
-#
-#
-
 # Set up environment variables
 # ----------------------------
 

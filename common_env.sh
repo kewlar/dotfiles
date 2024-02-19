@@ -1,7 +1,3 @@
-#!/bin/bash
-#
-#
-
 # Environment variables.
 export LIBRARY_PATH="${LD_LIBRARY_PATH:+LD_LIBRARY_PATH:}/usr/local/opt/openssl/lib/"
 export PATH="$HOME/bin:/usr/local/opt/libxml2/bin:$PATH"
