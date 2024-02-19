@@ -1,10 +1,13 @@
 #!/bin/sh
 
-# Set up symlinks in home directory to dotfiles
-ln -svi .dotfiles/.bash_profile ~/.bash_profile
-ln -svi .dotfiles/.bashrc ~/.bashrc
-ln -svi .dotfiles/.zshrc ~/.zshrc
-ln -svi .dotfiles/.vimrc ~/.vimrc
+# Define dotfiles directory (modify as needed)
+DOTFILES_DIR=~/.dotfiles
 
-# Set up Git
-ln -svi .dotfiles/.gitignore_global ~/.gitignore_global
+# List of configuration files
+CONFIG_FILES=".bash_profile .bashrc .zshrc .vimrc .gitignore_global"
+
+# Backup existing configuration files and create symlinks
+for file in $CONFIG_FILES; do
+  ln -svi "$DOTFILES_DIR/$file" "$HOME/$file"
+  echo "Created symlink for $HOME/$file"
+done
