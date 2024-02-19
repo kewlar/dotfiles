@@ -1,12 +1,12 @@
 # Global .gitignore
 # -----------------
+
+.byebug_history
 .DS_Store
 .DS_Store?
+.generators
+.idea/
+.rakeTasks
+.sass-cache/
 .~$*.xlsx
 Thumbs.db
-.idea/
-.sass-cache/
-.byebug_history
-.generators
-.rakeTasks
-
