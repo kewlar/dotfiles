@@ -1,6 +1,4 @@
-#!/bin/bash
-#
-#
+#!/bin/sh
 
 # Set up symlinks in home directory to dotfiles
 ln -svi .dotfiles/.bash_profile ~/.bash_profile
