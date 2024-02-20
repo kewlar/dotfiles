@@ -1,1 +1,1 @@
-. ~/.dotfiles/common_profile.sh
+. ~/.dotfiles/login_profile

@@ -104,4 +104,4 @@ unsetopt INC_APPEND_HISTORY
 unsetopt INC_APPEND_HISTORY_TIME
 setopt   SHARE_HISTORY
 
-. ~/.dotfiles/common_env.sh
+. ~/.dotfiles/terminal_rc

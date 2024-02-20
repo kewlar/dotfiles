@@ -1,12 +1,12 @@
 os_type=$(uname -s)
 if [[ "$os_type" == "Darwin" ]]; then
-  . ~/.dotfiles/rc.macos
+  . ~/.dotfiles/terminal_rc.macos
 fi
 
 export PATH="$PATH:/home/kewlar/.local/bin"
 
-if [ -f ~/.dotfiles/secrets.sh ]; then
-  . ~/.dotfiles/secrets.sh
+if [ -f ~/.dotfiles/secrets ]; then
+  . ~/.dotfiles/secrets
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
