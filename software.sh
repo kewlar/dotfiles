@@ -2,8 +2,6 @@
 #
 #
 
-# (Assume Ruby is already installed.)
-
 # Make sure Homebrew is installed.
 if which brew > /dev/null
 then
@@ -11,7 +9,7 @@ then
   echo "Homebrew is already installed."
 else
   # Install Homebrew.
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi;
 
 # Install the software.
