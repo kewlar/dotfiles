@@ -1,1 +1,1 @@
-source ~/.dotfiles/common_profile.sh
+. ~/.dotfiles/common_profile.sh
