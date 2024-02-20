@@ -5,5 +5,4 @@
 os_type=$(uname -s)
 if [[ "$os_type" == "Darwin" ]]; then
   . ~/.dotfiles/terminal_rc.macos
-  . ~/.dotfiles/aliases.macos
 fi
