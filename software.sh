@@ -1,16 +1,9 @@
 #!/bin/bash
-#
-#
 
 # Make sure Homebrew is installed.
-if which brew > /dev/null
-then
-  # Do nothing. Or, better, learn proper Bash scripting.
-  echo "Homebrew is already installed."
-else
-  # Install Homebrew.
+if ! which brew > /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi;
+fi
 
 # Install the software.
 brew install git
