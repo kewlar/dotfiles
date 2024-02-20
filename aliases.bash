@@ -21,5 +21,6 @@ alias ll='ls -lh'
 alias ls='ls --color=tty'
 alias lsa='ls -lah'
 alias md='mkdir -p'
+alias mkcd="mkdir -p $@ && cd ${@:$#}"
 alias rd=rmdir
 alias run-help=man
