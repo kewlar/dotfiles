@@ -3,7 +3,7 @@ if [[ "$os_type" == "Darwin" ]]; then
   . ~/.dotfiles/terminal_rc.macos
 fi
 
-export PATH="$PATH:/home/kewlar/.local/bin"
+export PATH="$PATH:~/.local/bin"
 
 if [ -f ~/.dotfiles/secrets ]; then
   . ~/.dotfiles/secrets
