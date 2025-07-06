@@ -8,5 +8,5 @@ CONFIG_FILES=".bash_profile .bashrc .zprofile .zshrc .vimrc .gitignore_global"
 
 # Backup existing configuration files and create symlinks
 for file in $CONFIG_FILES; do
-  ln -s --backup=numbered "$DOTFILES_DIR/$file" "$HOME/$file"
+  ln -rs --backup=numbered "$DOTFILES_DIR/$file" "$HOME/$file"
 done
