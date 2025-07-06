@@ -3,8 +3,6 @@ if [[ "$os_type" == "Darwin" ]]; then
   . ~/.dotfiles/login_profile.macos
 fi
 
-export PATH="$PATH:~/.local/bin"
-
 if [ -f ~/.dotfiles/secrets ]; then
   . ~/.dotfiles/secrets
 fi

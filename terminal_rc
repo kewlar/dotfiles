@@ -2,6 +2,8 @@
 # # Harcoded prompt symbol, because \$ somehow does not switch to # under root.
 # export SUDO_PS1="\[\e[0;31m\]\u@\h \[\e[1;34m\]\w\[\e[0m\]\n# "
 
+export PATH="$PATH:$HOME/.local/bin"
+
 os_type=$(uname -s)
 if [[ "$os_type" == "Darwin" ]]; then
   . ~/.dotfiles/terminal_rc.macos
